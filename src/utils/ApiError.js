@@ -8,7 +8,7 @@ class ApiError extends Error {
         super(message)
         this.statuscode = statuscode
         this.data = null
-        this.message = message
+        this.message = message 
         this.success = false
         this.errors = errors   // here we overwrite the methods of func by error class and constructors 
 
