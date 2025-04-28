@@ -12,7 +12,7 @@ class ApiError extends Error {
         this.success = false
         this.errors = errors   // here we overwrite the methods of func by error class and constructors 
 
-    if(statck){
+    if(stack){
         this.stack = statck
     } else {
         Error.captureStackTrace(this , this.constructor)
